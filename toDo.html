@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/Style_toDo.css">
+	<title>Todo List</title>
+</head>
+
+<body>
+
+	<div class="container my-5">
+		<div class="row justify-content-center m-5">
+			<div class="col-6 col-5-lg shadow-lg card">
+				<div class="header pt-5">
+					<h1 class="text-center pb-5">Todo List</h1>
+					<p></p>
+					<div id="clock" class="clock text-center py-3"></div>
+					<div id="date" class="date text-center"></div>
+				</div>
+
+				<div class="row justify-content-center my-5">
+					<input id="itemInput" type="text" placeholder="  e.g.: Go to gym !">
+					<button id="itemAdd" class="btn btn-light add-btn mx-3"><i class="fas fa-plus"></i></button>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-3 col-4-md">
+						<button id="all" class="btn btn-light"><i class="fas fa-list-alt"></i></button>
+					</div>
+					<div class="col-3 col-4-md">
+						<button id="finished" class="btn btn-light text-center"><i class="fas fa-check-square"></i></button>
+					</div>
+					<div class="col-3 col-4-md">
+						<button id="unfinished" class="btn btn-light text-center"><i class="far fa-check-square"></i></button>
+					</div>
+				</div>
+
+				<div class="row justify-content-center my-5">
+					<ul class="col-12 col-6-md">
+						<!--						<li class="m-3"> <i class="far fa-circle"></i> shopping
+						<span class="addDate m-5"></span><i class=" far fa-trash-alt"></i></li>
+						<li class="m-3"> <i class="far fa-circle"></i> eatting 
+						<span class="addDate m-5"></span><i class=" far fa-trash-alt"></i></li>
+						<li class="m-3"> <i class="far fa-circle"></i> going 
+						<span class="addDate m-5"></span><i class=" far fa-trash-alt"></i></li>
+						<li class="m-3"> <i class="far fa-circle"></i> hiking     <span class="addDate m-5"></span><i class=" far fa-trash-alt"></i></li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--USE FULL jQuery Version for using fadeOut function-->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<!--bootstrap js file-->
+	<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<!--local js file-->
+	<script type="text/javascript" src="js/toDo.js"></script>
+</body>
+
+</html>
